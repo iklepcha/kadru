@@ -1,89 +1,89 @@
 @font-face {
   font-family: "ma-Black";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Black.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Black.ttf");
 }
 
 @font-face {
   font-family: "ma-BlackItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-BlackItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-BlackItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-Bold";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Bold.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Bold.ttf");
 }
 
 @font-face {
   font-family: "ma-BoldItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-BoldItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-BoldItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-ExtraBold";
-  src: url("/assets/fonts/M_A/MontserratAlternates-ExtraBold.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "ma-ExtraBoldItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-ExtraBoldItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-ExtraBoldItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-ExtraLight";
-  src: url("/assets/fonts/M_A/MontserratAlternates-ExtraLight.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-ExtraLight.ttf");
 }
 
 @font-face {
   font-family: "ma-ExtraLightItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-ExtraLightItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-ExtraLightItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-Italic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Italic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Italic.ttf");
 }
 
 @font-face {
   font-family: "ma-Light";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Light.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Light.ttf");
 }
 
 @font-face {
   font-family: "ma-LightItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-LightItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-LightItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-Medium";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Medium.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Medium.ttf");
 }
 
 @font-face {
   font-family: "ma-MediumItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-MediumItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-MediumItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-Regular";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Regular.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Regular.ttf");
 }
 
 @font-face {
   font-family: "ma-SemiBold";
-  src: url("/assets/fonts/M_A/MontserratAlternates-SemiBold.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "ma-SemiBoldItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-SemiBoldItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-SemiBoldItalic.ttf");
 }
 
 @font-face {
   font-family: "ma-Thin";
-  src: url("/assets/fonts/M_A/MontserratAlternates-Thin.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-Thin.ttf");
 }
 
 @font-face {
   font-family: "ma-ThinItalic";
-  src: url("/assets/fonts/M_A/MontserratAlternates-ThinItalic.ttf");
+  src: url("../fonts/M_A/MontserratAlternates-ThinItalic.ttf");
 }
