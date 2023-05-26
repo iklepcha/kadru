@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Иконка web приложения -->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/icon_web_app.png"
+      type="image/x-icon"
+    />
+
+    <!-- Подключение css стилей -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/font.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/content.css" />
+    <link rel="stylesheet" href="/assets/css/adaptive.css" />
+
+    <!-- Подключение JS скриптов -->
+    <script src="/assets/js/header.js" defer></script>
+    <script src="/assets/js/notifications.js" defer></script>
+
+    <title>Сотрудники - Кадры Отдел</title>
+  </head>
+  <body>
+    <header>
+      <div class="head_header">
+        <div class="logo">
+          <a href="/index.html">
+            <img src="/assets/images/logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- Активная ссылка - navbar_active_link (Писать после "block_link") -->
+        <div class="navbar">
+          <div class="block_link">
+            <a href="/pages/grafic.html">График</a>
+          </div>
+
+          <div class="block_link navbar_active_link link_sotrodniki">
+            <a href="/index.html">Сотрудники</a>
+            <div class="block_link_sotrodniki">
+              <a href="#" class="sotrodniki_li">Общие сведения</a>
+              <a href="#" class="sotrodniki_li">Лист ознакомления</a>
+              <a href="#" class="sotrodniki_li">Данные для телефонного справочника</a>
+              <a href="#" class="sotrodniki_li">Данные в Отел безопасности</a>
+              <a href="#" class="sotrodniki_li">Данные тестировщиков</a>
+              <a href="#" class="sotrodniki_li">Сведения о семье и родствеников</a>
+              <a href="#" class="sotrodniki_li">Паспортные данные</a>
+              <a href="#" class="sotrodniki_li">Данные о воинском учете</a>
+              <a href="#" class="sotrodniki_li">Фильтр</a>
+              <img src="/assets/images/li_link_decor.png" alt="///" />
+            </div>
+          </div>
+
+          <div class="block_link">
+            <a href="/pages/news.html">Новости</a>
+          </div>
+
+          <div class="block_link">
+            <a href="/pages/meroplace.html">Мероприятия</a>
+          </div>
+
+          <div class="block_link">
+            <a href="/pages/happyberthday.html">Дни рождения</a>
+          </div>
+        </div>
+        <div class="profile">
+          <a href="#">Фамилия И. О.</a>
+        </div>
+        <div class="menuNav">
+          <img src="/assets/images/icon_menu.png" alt="">
+        </div>
+      </div>
+
+      <div class="secondary_header">
+        <div class="buttons_in_header">
+          <button>Создать сотрудника</button>
+        </div>
+        <div class="infortion_count_data">Найдено <b>INT</b> записи</div>
+        <div class="visible_active_li">
+          Сотрудники <b> / Общие сведения /</b>
+        </div>
+      </div>
+
+      <!-- Адаптивное меню -->
+      <div class="adaptive_menu">
+        <a href="#">Первая ссылка</a>
+        <a href="#">Вторая ссылка</a>
+        <a href="#">Третья ссылка</a>
+      </div>
+      <!-- Конец Адаптивного меню -->
+    </header>
+
+    <main>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Фио</th>
+              <th>Дата рождения</th>
+              <th>Отпуск / Дн</th>
+              <th>Рабочий тел</th>
+              <th>Мобильный тел</th>
+              <th>Номер авто</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Разработчик Клиентского Части</td>
+              <td>01/0_/20__</td>
+              <td>---</td>
+              <td>+7112233</td>
+              <td>+7 999 666 88 99</td>
+              <td>RU123O</td>
+              <td class="table_td_edit">
+                <a href="#"><img src="/assets/images/icon_edit.png" alt="изм"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Разработчик Северной* Части</td>
+              <td>__/03/20__</td>
+              <td>06/09/2023 - 17/09/2023 (11дн)</td>
+              <td>+7112244</td>
+              <td>+7 999 666 77 88</td>
+              <td>---</td>
+              <td class="table_td_edit">
+                <a href="#"><img src="/assets/images/icon_edit.png" alt="изм"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Простой Тестовый Тестищеееееееееее</td>
+              <td>00/11/2222</td>
+              <td>22/33/3333 - 22/33/3334 (дох(игрек)*я)</td>
+              <td>+71122449898798769766575</td>
+              <td>+7 999 666 77 88878 77869786 8 6586 585 </td>
+              <td>NORUDOOOOOOOOOOOOOOOOOOOOOO&&&777</td>
+              <td class="table_td_edit">
+                <a href="#"><img src="/assets/images/icon_edit.png" alt="изм"/></a>
+              </td>
+            </tr>
+            <!-- Добавьте сколько угодно строк и столбцов -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <div class="other">
+      <img src="/assets/images/icon_notifications.svg" alt="Уведомления" />
+    </div>
+    <div class="otherClick">
+      <div class="nowDate close_notificate">
+        <span><b>Среда, 25 мая</b></span>
+        <img src="/assets/images/close.png" alt="X">
+      </div>
+      <div class="notificateBlock">
+        <div class="notificate">
+          Завтра день рождения у <b>Эдуарда К.</b> В этом году
+          ей/ему исполняется 22 года! Не забудьте её/его
+          поздравить. 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
