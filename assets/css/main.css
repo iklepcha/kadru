@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'ma-Regular';
+  font-size: 14px;
+
+  transition: var(--time-anim-3);
+}
+
+html, body {
+  background: #D0D7EF;
+  height: 100%;
+}
+
+b, th {
+  font-family: 'ma-SemiBold';
+}
+
+/* Глобальные переменные стилей */
+:root {
+  /* Цвета */
+  --color-headblue: #4075fc;
+  --color-secondred: #FF2F2F;
+
+  /* Тени */
+  --shadow-head: 4px 4px 22px 1px rgba(0, 0, 0, 0.25);
+  --shadow-head-blue: 4px 4px 22px 1px rgba(39, 75, 252, 0.3);
+
+  /* Анимации */
+  --time-anim-3: 0.2s ease;
+}
+
+
+/* Отключенные компоненты */
+.menuNav, .adaptive_menu {
+  display: none;
+}
+
+/* ВРЕМЕННО */
+.hahahalol {
+  max-width: 100%;
+}

@@ -1,0 +1,133 @@
+/* Шапка */
+.head_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+  box-shadow: var(--shadow-head);
+
+  padding: 0px 40px;
+  height: 54px;
+}
+
+.logo {
+}
+
+.logo img {
+  max-width: 168px;
+  padding-top: 10px;
+}
+
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.block_link {
+  height: 100%;
+}
+
+.navbar .block_link a,
+.profile a {
+  text-decoration: none;
+  padding: 0px 11px 0px 11px;
+  color: black;
+  font-family: 'ma-Medium';
+
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  transition: var(--time-anim-3);
+}
+
+
+.navbar .block_link a:hover, .navbar .navbar_active_link a, .onMouseActive {
+  background: var(--color-headblue);
+  transition: var(--time-anim-3);
+  color: white;
+}
+.navbar_active_link a {
+  color: white;
+}
+.navbar .onMouseActive a {color: white;}
+
+.profile a {
+  padding: 8px 12px;
+  background: var(--color-headblue);
+  box-shadow: var(--shadow-head);
+  border-radius: 8px;
+
+  color: white;
+}
+.profile a:hover {
+  box-shadow: var(--shadow-head-blue);
+  transition: var(--time-anim-3);
+}
+
+/* Выпадающий список в шапке */
+.block_link_sotrodniki {
+  display: none;
+  flex-direction: column;
+
+  position: absolute;
+  min-width: 300px;
+  max-width: 500px;
+  height: fit-content;
+
+  background: var(--color-headblue);
+  padding: 14px;
+  padding: 14px 0px 14px 14px;
+}
+
+.navbar .block_link_sotrodniki a {
+  padding: 8px 26px 8px 12px;
+  color: white;
+}
+.navbar .block_link_sotrodniki a:hover {
+  background: var(--color-secondred)
+  /* padding: 8px 0px 8px 12px; */
+}
+.navbar .block_link_sotrodniki img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 64px;
+  padding: 6px;
+}
+
+
+/* Второстепенная шапка */
+.secondary_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 6px;
+  height: 52px;
+  background: white;
+  box-shadow: var(--shadow-head);
+}
+
+.secondary_header .buttons_in_header button {
+  border: none;
+  padding: 8px 12px;
+  background: var(--color-headblue);
+  box-shadow: var(--shadow-head);
+  transition: var(--time-anim-3);
+  border-radius: 8px;
+
+  color: white;
+}
+.secondary_header .buttons_in_header button:hover {
+  box-shadow: var(--shadow-head-blue);
+  transition: var(--time-anim-3);
+}
+.secondary_header .buttons_in_header button:active {
+  box-shadow: none;
+}

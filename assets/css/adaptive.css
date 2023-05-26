@@ -1,0 +1,81 @@
+@media screen and (max-width: 980px) {
+  /* Новые стили для элементов, когда ширина экрана 980px и меньше */
+  /* Шапка */
+  * {
+    font-size: 10px;
+    /* transition: var(--time-anim-3); */
+  }
+  .head_header {
+    height: 32px;
+  }
+  .profile a {
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  .logo img {
+    width: 100px;
+    padding-top: 8px;
+  }
+  /* Второстепенная шапка */
+  .secondary_header {
+    height: 32px;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 8px 8px 4px 8px;
+  }
+  .secondary_header .buttons_in_header button {
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  /* Контент, таблица */
+  main {
+    padding: 6px;
+    margin: 8px 8px 4px 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .head_header {
+    padding: 0px 10px;
+  }
+  .navbar, .profile {
+    display: none;
+  }
+  .menuNav {
+    display: flex;
+  }
+  .menuNav img {
+    padding-top: 2px;
+    width: 22px;
+  }
+  .adaptive_menu_on {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    background: white;
+    width: fit-content;
+    padding: 0 22px;
+    height: 100%;
+    top: 32px;
+    right: 0;
+  }
+  .secondary_header {
+    /* width: fit-content; */
+    height: fit-content;
+    flex-wrap: wrap;
+  }
+  .secondary_header .buttons_in_header, .infortion_count_data {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .secondary_header {
+    width: fit-content;
+    justify-content: center;
+  }
+  .secondary_header .buttons_in_header {
+    margin-bottom: 10px;
+  }
+}

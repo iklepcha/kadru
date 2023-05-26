@@ -1,0 +1,113 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+  padding: 10px;
+
+  border-radius: 6px;
+  height: 52px;
+  background: white;
+  box-shadow: var(--shadow-head);
+
+  /* min-height: 200px; */
+  height: fit-content;
+}
+
+table {
+  /* width: 100%; */
+  border-collapse: collapse;
+  table-layout: auto;
+
+  margin-bottom: 16px;
+}
+
+table th {
+  text-align: start;
+  background: #eaeaea;
+  padding: 8px;
+}
+
+.table-wrapper {
+  /* width: 100%; */
+  overflow-x: scroll;
+}
+
+table td {
+  padding: 8px;
+  white-space: nowrap;
+}
+
+table tr:hover :not(th){
+  background: #e7e7e7;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+table .table_td_edit {
+  padding: 0px 6px;
+}
+table .table_td_edit a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  transition: var(--time-anim-3);
+
+  height: 100%;
+  width: 100%;
+}
+table .table_td_edit img {
+  width: 20px;
+
+  transition: var(--time-anim-3);
+  display: block;
+}
+table .table_td_edit a:hover {
+  transform: scale(1.2);
+}
+
+/* OTHER */
+.other, .otherClick {
+  position: absolute;
+  background: rgba(0, 72, 255, 0.5);
+  bottom: 10%;
+  right: 0;
+
+  padding: 10px 4px 8px 5px;
+  border-radius: 8px 0px 0px 8px;
+  transition: var(--time-anim-3);
+}
+.other img {
+  width: 16px;
+}
+
+.otherClick {
+  display: none;
+  flex-direction: column;
+  max-width: 400px;
+
+  padding: 10px;
+  color: white;
+}
+
+.nowDate {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 10px 0px;
+}
+.close_notificate img {
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  transition: var(--time-anim-3);
+}
+.close_notificate img:hover {
+  border: 1px white solid;
+  border-radius: 50%;
+  transition: var(--time-anim-3);
+  cursor: pointer;
+}
