@@ -3,13 +3,13 @@
   position: absolute;
   width: 100%;
   height: fit-content;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 1;
   overflow-y: scroll;
 
-  padding: 70% 0% 2% 0%;
+  padding: 2% 0%;
   /* background-color: brown; */
   background-color: rgba(200, 200, 200, 0.092);
   overflow-y: scroll;
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
 
-  margin-top: 2%;
+  margin-top: auto;
 
   background: rgba(255, 255, 255, 0.9);
   width: 500px;
