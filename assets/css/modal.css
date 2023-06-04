@@ -1,0 +1,163 @@
+/* Обвертка для модального окна */
+.modalWindows {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  overflow-y: scroll;
+
+  padding: 70% 0% 2% 0%;
+  /* background-color: brown; */
+  background-color: rgba(200, 200, 200, 0.092);
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+/* Блок модального онка */
+.modalCreatePerson {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2%;
+
+  background: rgba(255, 255, 255, 0.9);
+  width: 500px;
+  height: fit-content;
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-head);
+  overflow-y: scroll; /* или overflow-y: auto; */
+}
+
+/* Шапка Modal Window */
+.modal_CP_Header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.title_modal_CP_Header {
+  font-family: "ma-SemiBold";
+  border-bottom: 2px black solid;
+}
+.close_modal_CP_Header img {
+  width: 28px;
+}
+
+/* Form for Modal Window */
+.modalCreatePerson .modal_CP_Content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Контент Modal Window */
+.block_modal_CP {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.block_modal_CP_Content {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block_modal_CP_Content span {
+  padding: 4px;
+  background: var(--color-headblue);
+  color: white;
+}
+
+.el_modal_CP_Content {
+  padding: 10px;
+  border: 2px var(--color-headblue) solid;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.el_modal_CP_Content div {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.el_modal_win {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.el_modal_win label {
+  padding: 0 5px;
+}
+.el_modal_win input {
+  border: 1px black solid;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin: 5px;
+  width: auto;
+  font-family: "ma-Medium";
+}
+.el_modal_win input::placeholder {
+  font-family: "ma-Regular";
+}
+.el_modal_win input:focus {
+  box-shadow: var(--shadow-head);
+  outline: none;
+}
+
+.modal_CP_Footer {
+}
+.el_footer_modal_win {
+  display: flex;
+  width: fit-content;
+  margin: 18px 0px 0px 0px;
+}
+.el_footer_modal_win input {
+  margin-right: 5px;
+}
+.btn_modal_CP_Footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_mw_create,
+.btn_mw_close {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  background: var(--color-headblue);
+  box-shadow: var(--shadow-head);
+  border-radius: 4px;
+}
+.btn_mw_create:hover {
+  box-shadow: var(--shadow-head-blue);
+}
+.btn_mw_close {
+  box-shadow: var(--shadow-head);
+  background: var(--color-secondred);
+}
+.btn_mw_close:hover {
+  box-shadow: var(--shadow-head-red);
+}
+.btn_mw_create:active,
+.btn_mw_close:active {
+  box-shadow: none;
+}
+
+
+/* Кнопки добавления интутов */
+/* buttonADDarm */
+.btn_mw_test_down {
+  display: flex;
+  align-items: end;
+  padding: 2px;
+}
+.btn_mw_test_down button {
+  height: fit-content;
+}

@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Иконка web приложения -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/icon_web_app.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/images/icon_web_app.png" type="image/x-icon" />
 
     <!-- Подключение css стилей -->
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -18,14 +14,433 @@
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/content.css" />
     <link rel="stylesheet" href="assets/css/adaptive.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/boot/bootstrap.min.css" />
+    <script src="assets/css/boot/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/validationBOOT.js" defer></script>
 
     <!-- Подключение JS скриптов -->
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/notifications.js" defer></script>
+    <script src="assets/js/modalWindowCreatePerson.js" defer></script>
+    <script src="assets/js/modalWindowAddUZ.js" defer></script>
 
     <title>Сотрудники - Кадры Отдел</title>
   </head>
   <body>
+
+    <!-- Модальное окно для создания нового сотдрудника -->
+    <div class="modalWindows">
+      <div class="modalCreatePerson">
+        <div class="modal_CP_Header">
+          <div class="title_modal_CP_Header">
+            Создание нового сотрудника
+          </div>
+          <div class="close_modal_CP_Header">
+            <img src="assets/images/icon_close_modal_window.png" alt="">
+          </div>
+        </div>
+
+
+        <form class="modal_CP_Content row g-3 needs-validation" novalidate>
+          <div class="block_modal_CP">
+            <!-- Персональные Данные -->
+            <div class="block_modal_CP_Content">
+              <span>Персональные Данные</span>
+              <div class="el_modal_CP_Content">
+  
+                <div class="col-md-3">
+                  <label for="validationCustom01" class="form-label">Табельный №</label>
+                  <input type="number" class="form-control cardNumber" id="validationCustom02" placeholder="001" required>
+                  <input type="number" class="form-control cardNumberID" hidden id="validationCustom02" placeholder="001" required>
+                </div>
+  
+                <div class="col-md-8">
+                  <label for="validationCustom01" class="form-label">Фио</label>
+                  <input type="text" class="form-control nameInput" id="validationCustom01" placeholder="Иванов Иван Иванович" required>
+                  <input type="text" class="form-control fullNameInput" hidden id="validationCustom01" placeholder="Иванов Иван Иванович" required>
+                </div>
+  
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Город</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Кемерово</option>
+                    <option>Новосибирск</option>
+                    <option>Томск</option>
+                    <option>Москва</option>
+                  </select>
+                </div>
+  
+                <div class="col-md-8">
+                  <label for="validationCustom01" class="form-label">Адрес проживания</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="улица написания адреса" required>
+                </div>
+  
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Дата рождения</label>
+                  <input type="date" class="form-control" id="validationCustom05" required>
+                </div>
+  
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Мобильный телефон</label>
+                  <input type="text" class="form-control" id="validationCustom06" placeholder="+ 7 999 999 99 99" required>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Личчная почта</label>
+                  <input type="email" class="form-control" id="validationCustom06" placeholder="mail@domain" required>
+                </div>
+  
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Марка автомобиля</label>
+                  <input type="text" class="form-control" id="validationCustom07" placeholder="Марка">
+                </div>
+  
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">№ автомобиля</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="Номер">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Паспортные данные</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="Серия Номер">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom04" class="form-label">Семейной положение</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Замужем / Женат</option>
+                    <option>Холост</option>
+                  </select>
+                </div>
+
+                <div class="col-md-8">
+                  <label for="validationCustom01" class="form-label">Кол-во несовершеннолетних детей</label>
+                  <input type="number" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="validationCustom04" class="form-label">Тип образования</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Высшее</option>
+                    <option>Среднее</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Имя учебного заведения</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+
+                <div class="col-md-8">
+                  <label for="validationCustom01" class="form-label">Дата окончания учебного заведения</label>
+                  <input type="date" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+
+                <div class="col-md-7">
+                  <label for="validationCustom01" class="form-label">Специальность</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Номер военного билета</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Подразделения</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Кадровые приказы -->
+            <div class="block_modal_CP_Content">
+              <span>Кадровые приказы</span>
+              <div class="el_modal_CP_Content">
+
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Номер приказа</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+                </div>
+  
+                <div class="col-md-7">
+                  <label for="validationCustom04" class="form-label">Тип приказа</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Прием</option>
+                    <option>Перевод</option>
+                    <option>Увольнение</option>
+                  </select>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom04" class="form-label">Должность</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Должность</option>
+                    <option>Должность</option>
+                    <option>Должность</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom04" class="form-label">Направление</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Направление</option>
+                    <option>Направление</option>
+                    <option>Направление</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">Дата вступления в силу</label>
+                  <input type="date" class="form-control" id="validationCustom04" placeholder="" required>
+                </div>
+
+                <div class="col-md-11">
+                  <label for="validationCustom04" class="form-label">Филиал</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>Филиал ФКУ «Налог-Сервис» ФНС России в Красноярском крае, Республике Тыва и Республике Хакасия</option>
+                    <option>Филиал ФКУ «Налог-Сервис» ФНС России в Хабаровском крае</option>
+                    <option>Филиал ФКУ «Налог-Сервис» ФНС России в Кемеровской области</option>
+                    <option>Филиал ФКУ «Налог-Сервис» ФНС России в Нижегородской области</option>
+                    <option>Филиал ФКУ «Налог-Сервис» ФНС России в Томской области</option>
+                    <option>Филиал ФКУ «Налог-Сервис» ФНС России в г. Санкт-Петербурге</option>
+                  </select>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom04" class="form-label">Отдел</label>
+                  <select class="form-select" id="validationCustom03" required>
+                    <option selected disabled value=""></option>
+                    <option>АИС 2</option>
+                    <option>ЭТИ 2</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="validationCustom01" class="form-label">№ ДИ</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+                </div>
+  
+              </div>
+            </div>
+
+            <!-- Рабочие данные -->
+            <div class="block_modal_CP_Content">
+              <span>Рабочие данные</span>
+              <div class="el_modal_CP_Content">
+  
+                <div class="col-md-3">
+                  <label for="validationCustom01" class="form-label">Кабинет</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="" required>
+                </div>
+  
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Почта регион Lotus</label>
+                  <input type="email" class="form-control" id="validationCustom02" placeholder="mail@domain" required>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Почта Lotus77</label>
+                  <input type="email" class="form-control" id="validationCustom02" placeholder="mail@domain" required>
+                </div>
+
+                <div class="col-md-5">
+                  <label for="validationCustom01" class="form-label">Рабочий телефон</label>
+                  <input type="text" class="form-control" id="validationCustom04" placeholder="" required>
+                </div>
+  
+                
+                <!-- Учетные записи -->
+                <div class="col-md-7">
+                  <label for="validationCustom22" class="form-label">Тип УЗ</label>
+                  <select class="form-select selectTypeUz" id="validationCustom04">
+                    <option selected disabled value="">Выбрать тип УЗ</option>
+                    <option>region привилегированная</option>
+                    <option>region непривилегированная</option>
+                    <option>dpc привилегированная</option>
+                    <option>dpc непривилегированная</option>
+                    <option>idmz привилегированная</option>
+                    <option>sobi привилегированная</option>
+                    <option>iss привилегированная</option>
+                    <option>ern привилегированная</option>
+                    <option>УЗ для тестирования ЕКП</option>
+                    <option>ПАК ППК ЗАГС (для тестировщиков)</option>
+                    <option>ПАК КПЭ ЗАГС (для тестировщиков)</option> <!--Обязательно с датой-->
+                    <option>ПАК ЕГР ЗАГС (для администратора)</option>
+                    <option>УЗ КПЭ АИС ФЦОД</option>
+                    <option>УЗ ППК АИС ФЦОД</option>
+                    <option>УЗ КПЭ ЕРН</option>
+                  </select>
+                </div>
+
+
+                <div class="col-md-4 btn_mw_test_down">
+                  <button type="button" class="buttonADDuz btn_mw_create">Добавить УЗ</button>
+                </div>
+
+                <div class="col-md-12 uzId1">
+                  <label for="validationCustom23" class="form-label">region привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="region\">
+                </div>
+                <div class="col-md-12 uzId2">
+                  <label for="validationCustom23" class="form-label">region <span class="redTxt">не</span>привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="region\">
+                </div>
+                <div class="col-md-12 uzId3">
+                  <label for="validationCustom23" class="form-label">dpc привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="dpc\">
+                </div>
+                <div class="col-md-12 uzId4">
+                  <label for="validationCustom23" class="form-label">dpc <span class="redTxt">не</span>привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="dpc\">
+                </div>
+                <div class="col-md-12 uzId5">
+                  <label for="validationCustom23" class="form-label">idmz привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="idmz\">
+                </div>
+                <div class="col-md-12 uzId6">
+                  <label for="validationCustom23" class="form-label">sobi привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="sobi\">
+                </div>
+                <div class="col-md-12 uzId7">
+                  <label for="validationCustom23" class="form-label">iss привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="iss\">
+                </div>
+                <div class="col-md-12 uzId8">
+                  <label for="validationCustom23" class="form-label">ern привилегированная</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="ern\">
+                </div>
+                <div class="col-md-12 uzId9">
+                  <label for="validationCustom23" class="form-label">УЗ для тестирования ЕКП (1)</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="1">
+                </div>
+                <div class="col-md-12 uzId10">
+                  <label for="validationCustom23" class="form-label">УЗ для тестирования ЕКП (2)</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="2">
+                </div>
+                <div class="col-md-12 uzId11">
+                  <label for="validationCustom23" class="form-label">УЗ для тестирования ЕКП (3)</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="3">
+                </div>
+                <div class="col-md-12 uzId12">
+                  <label for="validationCustom23" class="form-label">ПАК ППК ЗАГС</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="(для тестировщиков)">
+                </div>
+                <div class="col-md-6 uzId13">
+                  <label for="validationCustom23" class="form-label">ПАК КПЭ ЗАГС</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="(для тестировщиков)">
+                </div>
+                <div class="col-md-6 uzId13_2">
+                  <label for="validationCustom23" class="form-label">Срок действия ПАК КПЭ ЗАГС</label>
+                  <input type="date" class="form-control" id="validationCustom02">
+                </div>
+                <div class="col-md-12 uzId14">
+                  <label for="validationCustom23" class="form-label">ПАК ЕГР ЗАГС</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="(для тестировщиков)">
+                </div>
+                <div class="col-md-12 uzId15">
+                  <label for="validationCustom23" class="form-label">КПЭ АИС ФЦОД</label>
+                  <input type="text" class="form-control" id="validationCustom02">
+                </div>
+                <div class="col-md-12 uzId16">
+                  <label for="validationCustom23" class="form-label">ППК АИС ФЦОД</label>
+                  <input type="text" class="form-control" id="validationCustom02">
+                </div>
+                <div class="col-md-12 uzId17">
+                  <label for="validationCustom23" class="form-label">КПЭ ЕРН</label>
+                  <input type="text" class="form-control" id="validationCustom02">
+                </div>
+
+
+                <div class="col-md-6">
+                  <label for="validationCustom22" class="form-label">Тип АРМ</label>
+                  <select class="form-select selectTypeArm" id="validationCustom04">
+                    <option selected disabled value="">Выбрать тип АРМ</option>
+                    <option>Локальный АРМ</option>
+                    <option>Интернет АРМ</option>
+                    <option>АРМ ФИР</option>
+                    <option>АРМ ЗАГС</option>
+                    <option>ip Соболь</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4 btn_mw_test_down">
+                  <button type="button" class="buttonADDarm btn_mw_create">Добавить АРМ</button>
+                </div>
+
+                <div class="col-md-12 armId1">
+                  <label for="validationCustom23" class="form-label">Имя локального АРМ</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Имя АРМ">
+                </div>
+                <div class="col-md-12 armId2">
+                  <label for="validationCustom23" class="form-label">Имя интернет АРМ</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Имя АРМ">
+                </div>
+                <div class="col-md-12 armId3">
+                  <label for="validationCustom23" class="form-label">Имя ФИМ ФИР (ФЦОД)</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Имя АРМ">
+                </div>
+                <div class="col-md-12 armId4">
+                  <label for="validationCustom23" class="form-label">Имя ЗАГС</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Имя АРМ">
+                </div>
+                <div class="col-md-12 armId5">
+                  <label for="validationCustom23" class="form-label">ip Соболь</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="ip Соболь">
+                </div>
+
+  
+                <div class="col-md-7">
+                  <label for="validationCustom01" class="form-label">Имя VDI Horizon "Походный"</label>
+                  <input type="text" class="form-control" id="validationCustom06" placeholder="" required>
+                </div>
+  
+                <div class="col-md-7">
+                  <label for="validationCustom01" class="form-label">Имя VDI Horizon "Дубна"</label>
+                  <input type="text" class="form-control" id="validationCustom07" placeholder="">
+                </div>
+  
+                <div class="col-md-7">
+                  <label for="validationCustom01" class="form-label">Имя VDI Horizon "Городец"</label>
+                  <input type="text" class="form-control" id="validationCustom08" placeholder="">
+                </div>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="modal_CP_Footer">
+
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Все данные верны
+                </label>
+              </div>
+            </div>
+
+            <div class="btn_modal_CP_Footer">
+              <button class="btn_mw_create" type="submit">Создать</button>
+              <button class="btn_mw_close" type="button">Закрыть</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
     <header>
       <div class="head_header">
         <div class="logo">
@@ -164,7 +579,7 @@
         <div class="notificate">
           Завтра день рождения у <b>Эдуарда К.</b> В этом году
           ей/ему исполняется 22 года! Не забудьте её/его
-          поздравить. 
+          поздравить.
         </div>
       </div>
     </div>

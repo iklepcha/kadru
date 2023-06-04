@@ -9,7 +9,8 @@
 }
 
 html, body {
-  background: #D0D7EF;
+  background: #ffffff;
+  width: 100%;
   height: 100%;
 }
 
@@ -26,6 +27,7 @@ b, th {
   /* Тени */
   --shadow-head: 4px 4px 22px 1px rgba(0, 0, 0, 0.25);
   --shadow-head-blue: 4px 4px 22px 1px rgba(39, 75, 252, 0.3);
+  --shadow-head-red: 4px 4px 22px 1px rgba(252, 39, 39, 0.3);
 
   /* Анимации */
   --time-anim-3: 0.2s ease;
