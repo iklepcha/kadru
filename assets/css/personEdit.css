@@ -18,3 +18,32 @@
 .personEdit .col-md-4 {
   width: 100%;
 }
+
+/* Добавление новых приказов на странице редактирования */
+.el_modal_CP_Content_wrapper {
+  /* height: fit-content; */
+}
+.edit_btn_kadru_prikaz button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.edit_blocks_kadru_prikaz {
+  display: flex;
+
+  overflow-x: scroll;
+}
+.edit_block_kadru_prikaz {
+  background: grey;
+  padding: 10px 16px;
+  height: fit-content;
+}
+.el_modal_CP_Content .edit_block_kadru_prikaz span {
+  margin: 0;
+  padding: 5px 8px;
+}
+.el_modal_CP_Content .edit_block_kadru_prikaz span b {
+  padding: 5px 8px;
+  background: var(--color-secondred);
+}

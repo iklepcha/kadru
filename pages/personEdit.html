@@ -158,8 +158,8 @@
               </div>
 
               <div class="col-md-12">
-                <label for="validationCustom12" class="form-label">Мобильный телефон</label>
-                <input type="text" class="form-control" id="validationCustom13" placeholder="+ 7 999 999 99 99" required>
+                <label for="validationCustom06" name="phone" class="form-label">Мобильный телефон</label>
+                  <input type="tel" id="tel" class="form-control" id="validationCustom02" data-phone-pattern placeholder="+7 (900) 101-10-10" required>
               </div>
 
               <div class="col-md-12">
@@ -238,71 +238,54 @@
             <span>Кадровые приказы</span>
             <div class="el_modal_CP_Content">
 
-              <div class="col-md-12">
-                <label for="validationCustom38" class="form-label">Номер приказа</label>
-                <input type="text" class="form-control" id="validationCustom39" placeholder="" required>
-              </div>
+              <div class="el_modal_CP_Content_wrapper">
+                <div class="edit_btn_kadru_prikaz">
+                  <button>Создать кадровый приказ</button>
+                </div>
 
-              <div class="col-md-12">
-                <label for="validationCustom40" class="form-label">Тип приказа</label>
-                <select class="form-select" id="validationCustom41" required>
-                  <option selected disabled value=""></option>
-                  <option>Прием</option>
-                  <option>Перевод</option>
-                  <option>Увольнение</option>
-                </select>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom42" class="form-label">Должность</label>
-                <select class="form-select" id="validationCustom43" required>
-                  <option selected disabled value=""></option>
-                  <option>Должность</option>
-                  <option>Должность</option>
-                  <option>Должность</option>
-                </select>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom44" class="form-label">Направление</label>
-                <select class="form-select" id="validationCustom45" required>
-                  <option selected disabled value=""></option>
-                  <option>Направление</option>
-                  <option>Направление</option>
-                  <option>Направление</option>
-                </select>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom46" class="form-label">Дата вступления в силу</label>
-                <input type="date" class="form-control" id="validationCustom47" placeholder="" required>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom48" class="form-label">Филиал</label>
-                <select class="form-select" id="validationCustom49" required>
-                  <option selected disabled value=""></option>
-                  <option>Филиал ФКУ «Налог-Сервис» ФНС России в Красноярском крае, Республике Тыва и Республике Хакасия</option>
-                  <option>Филиал ФКУ «Налог-Сервис» ФНС России в Хабаровском крае</option>
-                  <option>Филиал ФКУ «Налог-Сервис» ФНС России в Кемеровской области</option>
-                  <option>Филиал ФКУ «Налог-Сервис» ФНС России в Нижегородской области</option>
-                  <option>Филиал ФКУ «Налог-Сервис» ФНС России в Томской области</option>
-                  <option>Филиал ФКУ «Налог-Сервис» ФНС России в г. Санкт-Петербурге</option>
-                </select>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom50" class="form-label">Отдел</label>
-                <select class="form-select" id="validationCustom51" required>
-                  <option selected disabled value=""></option>
-                  <option>АИС 2</option>
-                  <option>ЭТИ 2</option>
-                </select>
-              </div>
-
-              <div class="col-md-12">
-                <label for="validationCustom52" class="form-label">№ ДИ</label>
-                <input type="text" class="form-control" id="validationCustom53" placeholder="" required>
+                <div class="edit_blocks_kadru_prikaz">
+                  <div class="edit_block_kadru_prikaz">
+                    <div>
+                      <span>№ Приказа</span>
+                      <span><b>101</b></span>
+                    </div>
+                    <div>
+                      <span>Тип приказа</span>
+                      <span><b>Прием</b></span>
+                    </div>
+                    <div>
+                      <span>Должность</span>
+                      <span><b>Должность</b></span>
+                    </div>
+                    <div>
+                      <span>Направление</span>
+                      <span><b>Направление</b></span>
+                    </div>
+                    <div>
+                      <span>Дата вступления в силу</span>
+                      <span><b>01/05/2023</b></span>
+                    </div>
+                    <div>
+                      <span>Филиал</span>
+                      <span><b>ФКУ «Налог-Сервис» по Кемеровской области</b></span>
+                    </div>
+                    <div>
+                      <span>Отдел</span>
+                      <span><b>АИС 2</b></span>
+                    </div>
+                    <div>
+                      <span>№ ДИ</span>
+                      <span><b>101</b></span>
+                    </div>
+                    <div>
+                      <span><b>Удалить запись</b></span>
+                    </div>
+                  </div>
+                  
+                  <div class="edit_block_kadru_prikaz">
+                    content
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -488,6 +471,16 @@
                 <label for="validationCustom116" class="form-label">Имя VDI Horizon "Городец"</label>
                 <input type="text" class="form-control" id="validationCustom117" placeholder="">
               </div>
+
+            </div>
+          </div>
+
+          <!-- Кадровые приказы -->
+          <div class="block_modal_CP_Content personEdit">
+            <span>Отпуск</span>
+            <div class="el_modal_CP_Content">
+
+              Отпуск
 
             </div>
           </div>
