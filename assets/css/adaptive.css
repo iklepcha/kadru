@@ -35,8 +35,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
   .head_header {
     padding: 0px 10px;
+    height: 60px;
   }
   .head_header .navbar, .profile {
     display: none;
@@ -44,9 +48,12 @@
   .menuNav {
     display: flex;
   }
+  .logo img {
+    width: 340px;
+  }
   .menuNav img {
     padding-top: 2px;
-    width: 22px;
+    width: 32px;
   }
   .adaptive_menu_on {
     display: flex;
@@ -56,10 +63,10 @@
     position: absolute;
     background: white;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     padding: 0 22px;
-    height: 100%;
-    top: 32px;
+    /* height: 100%; */
+    top: 60px;
     right: 0;
     background: var(--color-headblue);
     overflow-y: scroll;
@@ -90,13 +97,32 @@
     margin-bottom: 10px;
     width: 80%;
   }
-  .secondary_header {
-    /* width: fit-content; */
+  header .secondary_header {
+    width: 97.5%;
+    flex-direction: column;
     height: fit-content;
-    flex-wrap: wrap;
   }
-  .secondary_header .buttons_in_header, .infortion_count_data {
-    margin-right: 10px;
+  header .buttons_in_header {
+    width: 100%;
+    margin-right: 0;
+  }
+  .buttons_in_header button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .infortion_count_data,
+  .visible_active_li {
+    margin-top: 4px;
+    font-size: 12px;
+    outline: 1px #0d6efd solid;
+    color: #0d6efd;
+    padding: 2px 6px;
+    width: 100%;
+
+    display: none;
+  }
+  main table {
+    font-size: 18px;
   }
 }
 
