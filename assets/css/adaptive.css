@@ -124,6 +124,18 @@
   main table {
     font-size: 18px;
   }
+  .modalWindows .col-md-12 {
+    width: 100%;
+  }
+  .modalWindows .col-md-6 {
+    width: 60%;
+  }
+  body .modalWindows {
+    padding: 0;
+  }
+  .modalWindows .modalCreatePerson {
+    border-radius: 0px;
+  }
 }
 
 @media screen and (max-width: 470px) {
@@ -133,5 +145,10 @@
   }
   .secondary_header .buttons_in_header {
     margin-bottom: 10px;
+  }
+  .modalWindows .col-md-6,
+  .modalWindows .col-md-4,
+  .modalWindows .btn_mw_test_down button {
+    width: 100%;
   }
 }
