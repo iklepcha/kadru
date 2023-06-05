@@ -98,8 +98,7 @@
     width: 80%;
   }
   header .secondary_header {
-    width: 97.5%;
-    flex-direction: column;
+    justify-content: center;
     height: fit-content;
   }
   header .buttons_in_header {
@@ -139,12 +138,8 @@
 }
 
 @media screen and (max-width: 470px) {
-  .secondary_header {
-    width: fit-content;
-    justify-content: center;
-  }
   .secondary_header .buttons_in_header {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   .modalWindows .col-md-6,
   .modalWindows .col-md-4,

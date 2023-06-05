@@ -19,10 +19,11 @@
   padding-top: 10px;
 }
 
-.navbar {
+.head_header .navbar {
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 7px 0 7px 0;
 }
 
 .block_link {
@@ -86,7 +87,8 @@
   padding: 8px 26px 8px 12px;
   color: white;
 }
-.navbar .block_link_sotrodniki a:hover {
+.navbar .block_link_sotrodniki a:hover,
+.navbar .block_link_sotrodniki .block_link_active  {
   background: var(--color-secondred)
   /* padding: 8px 0px 8px 12px; */
 }

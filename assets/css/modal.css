@@ -31,7 +31,6 @@
   padding: 10px;
   border-radius: 8px;
   box-shadow: var(--shadow-head);
-  overflow-y: scroll; /* или overflow-y: auto; */
 }
 
 /* Шапка Modal Window */
