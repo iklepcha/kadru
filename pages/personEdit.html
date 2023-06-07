@@ -25,7 +25,7 @@
     <!-- Подключение JS скриптов -->
     <script src="../assets/js/header.js" defer></script>
     <script src="../assets/js/notifications.js" defer></script>
-    <!-- <script src="../assets/js/modalWindowCreatePerson.js" defer></script> -->
+    <script src="../assets/js/modalWindowEditPrikaz.js" defer></script>
     <script src="../assets/js/modalWindowAddUZ.js" defer></script>
 
     <title>Разработчик Клиентского Части</title>
@@ -240,51 +240,129 @@
 
               <div class="el_modal_CP_Content_wrapper">
                 <div class="edit_btn_kadru_prikaz">
-                  <button>Создать кадровый приказ</button>
+                  <button type="button">Создать кадровый приказ</button>
                 </div>
 
                 <div class="edit_blocks_kadru_prikaz">
+
+                  <!-- карточка кадрового приказа -->
                   <div class="edit_block_kadru_prikaz">
                     <div>
-                      <span>№ Приказа</span>
-                      <span><b>101</b></span>
+                      <b>1. № Приказа:</b>
+                      <p>101</p>
                     </div>
                     <div>
-                      <span>Тип приказа</span>
-                      <span><b>Прием</b></span>
+                      <b>2. Тип приказа:</b>
+                      <p>101</p>
                     </div>
                     <div>
-                      <span>Должность</span>
-                      <span><b>Должность</b></span>
+                      <b>3. Должность:</b>
+                      <p>101</p>
                     </div>
                     <div>
-                      <span>Направление</span>
-                      <span><b>Направление</b></span>
+                      <b>4. Направление:</b>
+                      <p>101</p>
                     </div>
                     <div>
-                      <span>Дата вступления в силу</span>
-                      <span><b>01/05/2023</b></span>
+                      <b>5. Дата вступления в силу:</b>
+                      <p>07/05/2023</p>
                     </div>
                     <div>
-                      <span>Филиал</span>
-                      <span><b>ФКУ «Налог-Сервис» по Кемеровской области</b></span>
+                      <b>6. Филиал:</b>
+                      <p>ФКУ «Налог-Сервис» по Кемеровской области</p>
                     </div>
                     <div>
-                      <span>Отдел</span>
-                      <span><b>АИС 2</b></span>
+                      <b>7. Отдел:</b>
+                      <p>АИС 2</p>
                     </div>
                     <div>
-                      <span>№ ДИ</span>
-                      <span><b>101</b></span>
+                      <b>8. № ДИ:</b>
+                      <p>101</p>
+                    </div>
+
+                    <div>
+                      <button type="button">Удалить запись</button>
+                    </div>
+                  </div>
+
+                  <div class="edit_block_kadru_prikaz">
+                    <div>
+                      <b>1. № Приказа:</b>
+                      <p>101</p>
                     </div>
                     <div>
-                      <span><b>Удалить запись</b></span>
+                      <b>2. Тип приказа:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>3. Должность:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>4. Направление:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>5. Дата вступления в силу:</b>
+                      <p>07/05/2023</p>
+                    </div>
+                    <div>
+                      <b>6. Филиал:</b>
+                      <p>ФКУ «Налог-Сервис» по Кемеровской области</p>
+                    </div>
+                    <div>
+                      <b>7. Отдел:</b>
+                      <p>АИС 2</p>
+                    </div>
+                    <div>
+                      <b>8. № ДИ:</b>
+                      <p>101</p>
+                    </div>
+
+                    <div>
+                      <button type="button">Удалить запись</button>
+                    </div>
+                  </div>
+
+                  <div class="edit_block_kadru_prikaz">
+                    <div>
+                      <b>1. № Приказа:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>2. Тип приказа:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>3. Должность:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>4. Направление:</b>
+                      <p>101</p>
+                    </div>
+                    <div>
+                      <b>5. Дата вступления в силу:</b>
+                      <p>07/05/2023</p>
+                    </div>
+                    <div>
+                      <b>6. Филиал:</b>
+                      <p>ФКУ «Налог-Сервис» по Кемеровской области</p>
+                    </div>
+                    <div>
+                      <b>7. Отдел:</b>
+                      <p>АИС 2</p>
+                    </div>
+                    <div>
+                      <b>8. № ДИ:</b>
+                      <p>101</p>
+                    </div>
+
+                    <div>
+                      <button type="button">Удалить запись</button>
                     </div>
                   </div>
                   
-                  <div class="edit_block_kadru_prikaz">
-                    content
-                  </div>
                 </div>
               </div>
 
@@ -475,14 +553,39 @@
             </div>
           </div>
 
-          <!-- Кадровые приказы -->
+          <!-- Отпуск -->
           <div class="block_modal_CP_Content personEdit">
             <span>Отпуск</span>
             <div class="el_modal_CP_Content">
 
-              Отпуск
+              <div class="el_modal_CP_Content_wrapper">
+                <div class="edit_btn_kadru_prikaz edit_btn_kadru_otpusk">
+                  <button type="button">Создать отпуск</button>
+                </div>
+
+                <div class="edit_blocks_kadru_prikaz">
+
+                  <!-- карточка кадрового приказа -->
+                  <div class="edit_block_kadru_prikaz">
+                    <div>
+                      <b>1. Дата начала отпуска:</b>
+                      <p>00/00/0000</p>
+                    </div>
+                    <div>
+                      <b>2. Дата конца отпуска:</b>
+                      <p>00/00/0000</p>
+                    </div>
+
+                    <div>
+                      <button type="button">Удалить запись</button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
 
             </div>
+          </div>
           </div>
         </div>
 
@@ -521,5 +624,173 @@
         </div>
       </div>
     </div>
+
+        <!-- Модальное окно для создания нового приказа -->
+        <div class="modalWindows MWeditPrikaz">
+          <div class="modalCreatePerson">
+            <div class="modal_CP_Header">
+              <div class="title_modal_CP_Header">
+                Создание нового приказа
+              </div>
+              <div class="close_modal_CP_Header">
+                <img src="../assets/images/icon_close_modal_window.png" alt="">
+              </div>
+            </div>
+    
+    
+            <form class="modal_CP_Content row g-3 needs-validation" novalidate>
+              <div class="block_modal_CP">
+                <!-- Кадровые приказы -->
+                <div class="block_modal_CP_Content">
+                  <span>Кадровые приказы</span>
+                  <div class="el_modal_CP_Content">
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom38" class="form-label">Номер приказа</label>
+                      <input type="text" class="form-control" id="validationCustom39" placeholder="" required>
+                    </div>
+      
+                    <div class="col-md-12">
+                      <label for="validationCustom40" class="form-label">Тип приказа</label>
+                      <select class="form-select" id="validationCustom41" required>
+                        <option selected disabled value=""></option>
+                        <option>Прием</option>
+                        <option>Перевод</option>
+                        <option>Увольнение</option>
+                      </select>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom42" class="form-label">Должность</label>
+                      <select class="form-select" id="validationCustom43" required>
+                        <option selected disabled value=""></option>
+                        <option>Должность</option>
+                        <option>Должность</option>
+                        <option>Должность</option>
+                      </select>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom44" class="form-label">Направление</label>
+                      <select class="form-select" id="validationCustom45" required>
+                        <option selected disabled value=""></option>
+                        <option>Направление</option>
+                        <option>Направление</option>
+                        <option>Направление</option>
+                      </select>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom46" class="form-label">Дата вступления в силу</label>
+                      <input type="date" class="form-control" id="validationCustom47" placeholder="" required>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom48" class="form-label">Филиал</label>
+                      <select class="form-select" id="validationCustom49" required>
+                        <option selected disabled value=""></option>
+                        <option>Филиал ФКУ «Налог-Сервис» ФНС России в Красноярском крае, Республике Тыва и Республике Хакасия</option>
+                        <option>Филиал ФКУ «Налог-Сервис» ФНС России в Хабаровском крае</option>
+                        <option>Филиал ФКУ «Налог-Сервис» ФНС России в Кемеровской области</option>
+                        <option>Филиал ФКУ «Налог-Сервис» ФНС России в Нижегородской области</option>
+                        <option>Филиал ФКУ «Налог-Сервис» ФНС России в Томской области</option>
+                        <option>Филиал ФКУ «Налог-Сервис» ФНС России в г. Санкт-Петербурге</option>
+                      </select>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom50" class="form-label">Отдел</label>
+                      <select class="form-select" id="validationCustom51" required>
+                        <option selected disabled value=""></option>
+                        <option>АИС 2</option>
+                        <option>ЭТИ 2</option>
+                      </select>
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom52" class="form-label">№ ДИ</label>
+                      <input type="text" class="form-control" id="validationCustom53" placeholder="" required>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+    
+              <div class="modal_CP_Footer">
+    
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Все данные верны
+                    </label>
+                  </div>
+                </div>
+    
+                <div class="btn_modal_CP_Footer">
+                  <button class="btn_mw_create" type="submit">Создать</button>
+                  <button class="btn_mw_close" type="button">Закрыть</button>
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+
+        <!-- Модальное окно для создания нового приказа -->
+        <div class="modalWindows MWeditOtpusk">
+          <div class="modalCreatePerson">
+            <div class="modal_CP_Header">
+              <div class="title_modal_CP_Header">
+                Создание отпуска
+              </div>
+              <div class="close_modal_CP_Header close_modal_CP_Header_o">
+                <img src="../assets/images/icon_close_modal_window.png" alt="">
+              </div>
+            </div>
+    
+    
+            <form class="modal_CP_Content row g-3 needs-validation" novalidate>
+              <div class="block_modal_CP">
+                <!-- отпуск -->
+                <div class="block_modal_CP_Content">
+                  <span>Отпуск</span>
+                  <div class="el_modal_CP_Content">
+    
+                    <div class="col-md-12">
+                      <label for="validationCustom38" class="form-label">Дата начала отпуска</label>
+                      <input type="date" class="form-control" id="validationCustom39" placeholder="" required>
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="validationCustom38" class="form-label">Дата конца отпуска</label>
+                      <input type="date" class="form-control" id="validationCustom39" placeholder="" required>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+    
+              <div class="modal_CP_Footer">
+    
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Все данные верны
+                    </label>
+                  </div>
+                </div>
+    
+                <div class="btn_modal_CP_Footer">
+                  <button class="btn_mw_create" type="submit">Создать</button>
+                  <button class="btn_mw_close btn_mw_closeO" type="button">Закрыть</button>
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+
   </body>
 </html>

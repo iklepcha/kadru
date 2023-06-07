@@ -161,3 +161,12 @@
 .btn_mw_test_down button {
   height: fit-content;
 }
+
+
+/* Страница редактирования сотрудника (модальное окно добавления кадрового приказа) */
+.MWeditPrikaz, .MWeditOtpusk {
+  display: none;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+}

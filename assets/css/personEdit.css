@@ -22,6 +22,7 @@
 /* Добавление новых приказов на странице редактирования */
 .el_modal_CP_Content_wrapper {
   /* height: fit-content; */
+  width: 100%;
 }
 .edit_btn_kadru_prikaz button {
   border: none;
@@ -31,19 +32,55 @@
 
 .edit_blocks_kadru_prikaz {
   display: flex;
+  height: 100%;
+  width: 100%;
 
   overflow-x: scroll;
 }
 .edit_block_kadru_prikaz {
-  background: grey;
-  padding: 10px 16px;
+  background: rgba(187, 192, 210, 0.185);
+  border: 1px rgba(55, 89, 212, 0.275) solid;
+  padding: 0px 16px;
   height: fit-content;
+  min-width: 480px;
+  border-radius: 12px;
+  padding: px;
+  box-shadow: var(--shadow-head-blue);
 }
-.el_modal_CP_Content .edit_block_kadru_prikaz span {
-  margin: 0;
-  padding: 5px 8px;
+.edit_block_kadru_prikaz div {
+  display: flex;
+  width: fit-content;
+  margin: 10px 0px;
 }
-.el_modal_CP_Content .edit_block_kadru_prikaz span b {
-  padding: 5px 8px;
-  background: var(--color-secondred);
+.edit_block_kadru_prikaz div b {
+  width: fit-content;
+  margin-right: 10px;
+}
+.edit_block_kadru_prikaz div p {
+  text-decoration: underline;
+}
+.edit_block_kadru_prikaz div button {
+  border: none;
+  background: var(--color-headblue);
+  color: white;
+  padding: 7px 10px;
+  border-radius: 8px;
+}
+.edit_block_kadru_prikaz div button:hover {
+  background: #5080fa;
+  box-shadow: var(--shadow-head-blue);
+}
+.edit_block_kadru_prikaz div button:active,
+.edit_btn_kadru_prikaz button:active {
+  box-shadow: none;
+}
+
+.edit_btn_kadru_prikaz button {
+  border: none;
+  background: white;
+  border: 2px var(--color-headblue) solid;
+  box-shadow: var(--shadow-head-blue);
+  color: black;
+  padding: 7px 10px;
+  border-radius: 8px;
 }

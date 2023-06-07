@@ -72,7 +72,7 @@ table .table_td_edit a:hover {
 
 /* OTHER */
 .other, .otherClick {
-  position: absolute;
+  position: fixed;
   background: rgba(0, 72, 255, 0.5);
   bottom: 10%;
   right: 0;
@@ -110,4 +110,26 @@ table .table_td_edit a:hover {
   border-radius: 50%;
   transition: var(--time-anim-3);
   cursor: pointer;
+}
+
+.otchet {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: 10px;
+}
+.otchet button {
+  padding: 6px 12px;
+  border: none;
+  background-color: var(--color-headblue);
+  color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow-head);
+}
+.otchet button:hover {
+  box-shadow: var(--shadow-head-blue);
+}
+.otchet button:active {
+  box-shadow: none;
 }
