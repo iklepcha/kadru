@@ -2,7 +2,7 @@ let openMWCP = document.querySelector('.buttons_in_header button')
 let closeMWCP = document.querySelector('.close_modal_CP_Header')
 let MWCP = document.querySelector('.modalWindows')
 let MWCPblock = document.querySelector('.modalCreatePerson')
-let closeMWCPbtn = document.querySelector('.btn_mw_close')
+let closeMWCPbtn = document.querySelector('.btn_mw_closeP')
 
 // Страница редактирования
 let openMWeditKadruPrikaz = document.querySelector('.edit_btn_kadru_prikaz button')

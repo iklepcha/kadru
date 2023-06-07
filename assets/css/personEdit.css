@@ -1,15 +1,7 @@
-/* .personEditForm {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  width: 100%;
-  flex-wrap: wrap;
+.secondary_header {
+  justify-content: end;
+  text-align: start;
 }
-
-.personEdit {
-  width: 32%;
-  margin: 0 5px 0 5px;
-} */
 
 .personEdit .col-md-12 {
   width: fit-content;

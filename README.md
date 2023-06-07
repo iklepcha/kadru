@@ -1,1 +1,1 @@
-Kadru v2.21
+Kadru v2.22
