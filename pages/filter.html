@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Иконка web приложения -->
+    <link rel="shortcut icon" href="../assets/images/icon_web_app.png" type="image/x-icon" />
+
+    <!-- Подключение css стилей -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/content.css" />
+    <link rel="stylesheet" href="../assets/css/adaptive.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+    <link rel="stylesheet" href="../assets/css/personEdit.css" />
+    <link rel="stylesheet" href="../assets/css/filter.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/boot/bootstrap.min.css" />
+    <script src="../assets/css/boot/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/validationBOOT.js" defer></script>
+
+    <!-- Подключение JS скриптов -->
+    <script src="../assets/js/header.js" defer></script>
+    <script src="../assets/js/notifications.js" defer></script>
+    <script src="../assets/js/modalWindowEditPrikaz.js" defer></script>
+    <script src="../assets/js/modalWindowAddUZ.js" defer></script>
+
+    <title>Фильтр</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="head_header">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- Активная ссылка - navbar_active_link (Писать после "block_link") -->
+        <div class="navbar">
+          <div class="block_link">
+            <a href="../pages/grafic.html">График</a>
+          </div>
+
+          <div class="block_link navbar_active_link link_sotrodniki">
+            <a href="../index.html">Сотрудники</a>
+            <div class="block_link_sotrodniki">
+              <!-- block_link_active - активная ссылка -->
+              <a href="../index.html" class="sotrodniki_li">Общие сведения</a>
+              <a href="#" class="sotrodniki_li">Лист ознакомления</a>
+              <a href="#" class="sotrodniki_li">Данные для телефонного справочника</a>
+              <a href="#" class="sotrodniki_li">Данные в Отел безопасности</a>
+              <a href="#" class="sotrodniki_li">Данные тестировщиков</a>
+              <a href="#" class="sotrodniki_li">Сведения о семье и родствеников</a>
+              <a href="#" class="sotrodniki_li">Паспортные данные</a>
+              <a href="#" class="sotrodniki_li">Данные о воинском учете</a>
+              <a href="#" class="sotrodniki_li block_link_active">Фильтр</a>
+              <img src="../assets/images/li_link_decor.png" alt="///" />
+            </div>
+          </div>
+
+          <div class="block_link">
+            <a href="../pages/news.html">Новости</a>
+          </div>
+
+          <div class="block_link">
+            <a href="../pages/meroplace.html">Мероприятия</a>
+          </div>
+
+          <div class="block_link">
+            <a href="../pages/happyberthday.html">Дни рождения</a>
+          </div>
+        </div>
+        <div class="profile">
+          <a href="#">Фамилия И. О.</a>
+        </div>
+        <div class="menuNav">
+          <img src="../assets/images/icon_menu.png" alt="">
+        </div>
+      </div>
+
+      <div class="secondary_header secondary_header_filter">
+        <div class="filter_btn_header">
+          <button>Применить</button>
+          <button id="filter_btn_cancel">Сбросить</button>
+        </div>
+        <span>Сотрудники <b>/ Фильтр /</b></span>
+      </div>
+
+      <!-- Адаптивное меню -->
+      <div class="adaptive_menu">
+        <a href="#">График</a>
+
+        <a href="#" class="active_adaptive_menu_on">Сотрудники</a>
+        <div class="adaptive_menu_nav_li">
+          <a href="#" class="active_adaptive_menu_on">Общие сведения</a>
+          <a href="#">Лист ознакомления</a>
+          <a href="#">Данные для телефонного справочника</a>
+          <a href="#">Данные в Отдел безопасности</a>
+          <a href="#">Данные тестировщиков</a>
+          <a href="#">Сведения о семье и родствеников</a>
+          <a href="#">Паспортные данные</a>
+          <a href="#">Данные о воинском учете</a>
+          <a href="#">Фильтр</a>
+        </div>
+        <a href="#">Новости</a>
+        <a href="#">Мероприятия</a>
+        <a href="#">Дни рождения</a>
+      </div>
+      <!-- Конец Адаптивного меню -->
+    </header>
+
+    <main>
+    </main>
+
+    <div class="other">
+      <img src="../assets/images/icon_notifications.svg" alt="Уведомления" />
+    </div>
+
+    <div class="otherClick">
+      <div class="nowDate close_notificate">
+        <span><b>Среда, 25 мая</b></span>
+        <img src="../assets/images/close.png" alt="X">
+      </div>
+      <div class="notificateBlock">
+        <div class="notificate">
+          Завтра день рождения у <b>Эдуарда К.</b> В этом году
+          ей/ему исполняется 22 года! Не забудьте её/его
+          поздравить.
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

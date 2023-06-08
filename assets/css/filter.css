@@ -1,0 +1,25 @@
+.secondary_header_filter button {
+  background: var(--color-headblue);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-head);
+}
+.secondary_header_filter button:hover {
+  box-shadow: var(--shadow-head-blue);
+}
+.secondary_header_filter button:active {
+  box-shadow: none;
+}
+
+.secondary_header_filter #filter_btn_cancel {
+  background-color: var(--color-secondred);
+  box-shadow: var(--shadow-head);
+}
+.secondary_header_filter #filter_btn_cancel:hover {
+  box-shadow: var(--shadow-head-red);
+}
+.secondary_header_filter #filter_btn_cancel:active {
+  box-shadow: none;
+}
