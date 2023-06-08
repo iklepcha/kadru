@@ -32,6 +32,11 @@
   height: 100%;
 }
 
+header .navbar {
+  width: 100%;
+  justify-content: center;
+}
+
 .navbar .block_link a,
 .profile a {
   text-decoration: none;
@@ -44,6 +49,9 @@
   height: 100%;
   box-sizing: border-box;
   transition: var(--time-anim-3);
+}
+.profile a {
+  display: none;
 }
 
 

@@ -59,7 +59,7 @@
               <a href="#" class="sotrodniki_li">Сведения о семье и родствеников</a>
               <a href="#" class="sotrodniki_li">Паспортные данные</a>
               <a href="#" class="sotrodniki_li">Данные о воинском учете</a>
-              <a href="#" class="sotrodniki_li block_link_active">Фильтр</a>
+              <a href="filter.html" class="sotrodniki_li block_link_active">Фильтр</a>
               <img src="../assets/images/li_link_decor.png" alt="///" />
             </div>
           </div>
@@ -116,6 +116,355 @@
     </header>
 
     <main>
+      <div class="wrapper_filter">
+
+        <div class="blockSection">
+          <div class="blockSectionHeader"><b>Персональные данные</b></div>
+          <div class="blockSectionContent">
+            <button>Фио</button>
+            <button>Город</button>
+            <button>Адрес проживания</button>
+            <button>Дата рождения</button>
+            <button>Мобильный телефон</button>
+            <button>Личная почта</button>
+            <button>Марка автомобиля</button>
+            <button>№ автомобиля</button>
+            <button>Паспортные данные</button>
+            <button>Семейное положение</button>
+            <button>Кол-во несовершеннолетних детей</button>
+            <button>Тип образования</button>
+            <button>Имя учебного заведения</button>
+            <button>Дата окончания учебного заведения</button>
+            <button>Специальность</button>
+            <button>Номер военного билета</button>
+            <button>Подразделения</button>
+          </div>
+        </div>
+
+        <div class="blockSection">
+          <div class="blockSectionHeader"><b>Кадровые приказы</b></div>
+          <div class="blockSectionContent">
+            <button>Номер приказа</button>
+            <button>Тип приказа</button>
+            <button>Должность</button>
+            <button>Направление</button>
+            <button>Дата приказа</button>
+            <button>Филиал</button>
+            <button>Отдел</button>
+            <button>№ ДИ</button>
+          </div>
+        </div>
+
+        <div class="blockSection">
+          <div class="blockSectionHeader"><b>Рабочие данные</b></div>
+          <div class="blockSectionContent">
+            <button>Кабинет</button>
+            <button>Почта регион Lotus</button>
+            <button>Почта Lotus77</button>
+            <button>Рабочий телефон</button>
+
+            <button>region привилегированная</button>
+            <button>region непривилегированная</button>
+            <button>dpc привилегированная</button>
+            <button>dpc непривилегированная</button>
+            <button>idmz привилегированная</button>
+            <button>sobi привилегированная</button>
+            <button>iss привилегированная</button>
+            <button>ern привилегированная</button>
+            <button>УЗ для тестирования ЕКП</button>
+            <button>ПАК ППК ЗАГС (для тестировщиков)</button>
+            <button>ПАК КПЭ ЗАГС (для тестировщиков)</button>
+            <button>ПАК ЕГР ЗАГС (для администратора)</button>
+            <button>УЗ КПЭ АИС ФЦОД</button>
+            <button>УЗ ППК АИС ФЦОД</button>
+            <button>УЗ КПЭ ЕРН</button>
+
+            <button>Локальный АРМ</button>
+            <button>Интернет АРМ</button>
+            <button>АРМ ФИР</button>
+            <button>АРМ ЗАГС</button>
+            <button>ip Соболь</button>
+
+            <button>Имя VDI Horizon "Походный"</button>
+            <button>Имя VDI Horizon "Дубна"</button>
+            <button>Имя VDI Horizon "Городец"</button>
+          </div>
+        </div>
+
+        <div class="blockSection">
+          <div class="blockSectionHeader"><b>Отпуск</b></div>
+          <div class="blockSectionContent">
+            <button>Дата начала отпуска</button>
+            <button>Дата конца отпуска</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <main>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Фио</th>
+              <th>Город</th>
+              <th>Адрес проживания</th>
+              <th>Дата рождения</th>
+              <th>Мобильный телефон</th>
+              <th>Личная почта</th>
+              <th>Марка автомобиля</th>
+              <th>№ автомобиля</th>
+              <th>Паспортные данные</th>
+              <th>Семейное положение</th>
+              <th>Кол-во несовершеннолетних детей</th>
+              <th>Тип образования</th>
+              <th>Имя учебного заведения</th>
+              <th>Дата окончания учебного заведения</th>
+              <th>Специальность</th>
+              <th>Номер военного билета</th>
+              <th>Подключение</th>
+
+              <th>Номер приказа</th>
+              <th>Тип приказа</th>
+              <th>Должность</th>
+              <th>Направление</th>
+              <th>Дата приказа</th>
+              <th>Филиал</th>
+              <th>Отдел</th>
+              <th>№ ДИ</th>
+
+              <th>Кабинет</th>
+              <th>Почта регион Lotus</th>
+              <th>Почта Lotus77</th>
+              <th>Рабочий телефон</th>
+
+              <th>region привилегированная</th>
+              <th>region непривилегированная</th>
+              <th>dpc привилегированная</th>
+              <th>dpc непривилегированная</th>
+              <th>idmz привилегированная</th>
+              <th>sobi привилегированная</th>
+              <th>iss привилегированная</th>
+              <th>ern привилегированная</th>
+              <th>УЗ для тестирования ЕКП</th>
+              <th>ПАК ППК ЗАГС (для тестировщиков)</th>
+              <th>ПАК КПЭ ЗАГС (для тестировщиков)</th>
+              <th>ПАК ЕГР ЗАГС (для администратора)</th>
+              <th>УЗ КПЭ АИС ФЦОД</th>
+              <th>УЗ ППК АИС ФЦОД</th>
+              <th>УЗ КПЭ ЕРН</th>
+
+              <th>Локальный АРМ</th>
+              <th>Интернет АРМ</th>
+              <th>АРМ ФИР</th>
+              <th>АРМ ЗАГС</th>
+              <th>ip Соболь</th>
+
+              <th>Имя VDI Horizon "Походный"</th>
+              <th>Имя VDI Horizon "Дубна"</th>
+              <th>Имя VDI Horizon "Городец"</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- строки таблицы -->
+            <tr>
+              <td>Фамилия Эдуард Алексеевич</td>
+              <td>Кемерово</td>
+              <td>Адрес проживания</td>
+              <td>Дата рождения</td>
+              <td>Мобильный телефон</td>
+              <td>Личная почта</td>
+              <td>Марка автомобиля</td>
+              <td>№ автомобиля</td>
+              <td>Паспортные данные</td>
+              <td>Семейное положение</td>
+              <td>Кол-во несовершеннолетних детей</td>
+              <td>Тип образования</td>
+              <td>Имя учебного заведения</td>
+              <td>Дата окончания учебного заведения</td>
+              <td>Специальность</td>
+              <td>Номер военного билета</td>
+              <td>Подключение</td>
+
+              <td>Номер приказа</td>
+              <td>Тип приказа</td>
+              <td>Должность</td>
+              <td>Направление</td>
+              <td>Дата приказа</td>
+              <td>Филиал</td>
+              <td>Отдел</td>
+              <td>№ ДИ</td>
+
+              <td>Кабинет</td>
+              <td>Почта регион Lotus</td>
+              <td>Почта Lotus77</td>
+              <td>Рабочий телефон</td>
+
+              <td>region привилегированная</td>
+              <td>region непривилегированная</td>
+              <td>dpc привилегированная</td>
+              <td>dpc непривилегированная</td>
+              <td>idmz привилегированная</td>
+              <td>sobi привилегированная</td>
+              <td>iss привилегированная</td>
+              <td>ern привилегированная</td>
+              <td>УЗ для тестирования ЕКП</td>
+              <td>ПАК ППК ЗАГС (для тестировщиков)</td>
+              <td>ПАК КПЭ ЗАГС (для тестировщиков)</td>
+              <td>ПАК ЕГР ЗАГС (для администратора)</td>
+              <td>УЗ КПЭ АИС ФЦОД</td>
+              <td>УЗ ППК АИС ФЦОД</td>
+              <td>УЗ КПЭ ЕРН</td>
+
+              <td>Локальный АРМ</td>
+              <td>Интернет АРМ</td>
+              <td>АРМ ФИР</td>
+              <td>АРМ ЗАГС</td>
+              <td>ip Соболь</td>
+
+              <td>Имя VDI Horizon "Походный"</td>
+              <td>Имя VDI Horizon "Дубна"</td>
+              <td>Имя VDI Horizon "Городец"</td>
+
+              <td class="table_td_edit">
+                <a href="#"><img src="../assets/images/icon_edit.png" alt="изм"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Фамилия Павел Евгеньевич</td>
+              <td>Москва</td>
+              <td>Адрес проживания</td>
+              <td>Дата рождения</td>
+              <td>Мобильный телефон</td>
+              <td>Личная почта</td>
+              <td>Марка автомобиля</td>
+              <td>№ автомобиля</td>
+              <td>Паспортные данные</td>
+              <td>Семейное положение</td>
+              <td>Кол-во несовершеннолетних детей</td>
+              <td>Тип образования</td>
+              <td>Имя учебного заведения</td>
+              <td>Дата окончания учебного заведения</td>
+              <td>Специальность</td>
+              <td>Номер военного билета</td>
+              <td>Подключение</td>
+
+              <td>Номер приказа</td>
+              <td>Тип приказа</td>
+              <td>Должность</td>
+              <td>Направление</td>
+              <td>Дата приказа</td>
+              <td>Филиал</td>
+              <td>Отдел</td>
+              <td>№ ДИ</td>
+
+              <td>Кабинет</td>
+              <td>Почта регион Lotus</td>
+              <td>Почта Lotus77</td>
+              <td>Рабочий телефон</td>
+
+              <td>region привилегированная</td>
+              <td>region непривилегированная</td>
+              <td>dpc привилегированная</td>
+              <td>dpc непривилегированная</td>
+              <td>idmz привилегированная</td>
+              <td>sobi привилегированная</td>
+              <td>iss привилегированная</td>
+              <td>ern привилегированная</td>
+              <td>УЗ для тестирования ЕКП</td>
+              <td>ПАК ППК ЗАГС (для тестировщиков)</td>
+              <td>ПАК КПЭ ЗАГС (для тестировщиков)</td>
+              <td>ПАК ЕГР ЗАГС (для администратора)</td>
+              <td>УЗ КПЭ АИС ФЦОД</td>
+              <td>УЗ ППК АИС ФЦОД</td>
+              <td>УЗ КПЭ ЕРН</td>
+
+              <td>Локальный АРМ</td>
+              <td>Интернет АРМ</td>
+              <td>АРМ ФИР</td>
+              <td>АРМ ЗАГС</td>
+              <td>ip Соболь</td>
+
+              <td>Имя VDI Horizon "Походный"</td>
+              <td>Имя VDI Horizon "Дубна"</td>
+              <td>Имя VDI Horizon "Городец"</td>
+
+              <td class="table_td_edit">
+                <a href="#"><img src="../assets/images/icon_edit.png" alt="изм"/></a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Фамилия Имя Отчесво</td>
+              <td>Завтра предзащита</td>
+              <td>Адрес проживания</td>
+              <td>Дата рождения</td>
+              <td>Мобильный телефон</td>
+              <td>Личная почта</td>
+              <td>Марка автомобиля</td>
+              <td>№ автомобиля</td>
+              <td>Паспортные данные</td>
+              <td>Семейное положение</td>
+              <td>Кол-во несовершеннолетних детей</td>
+              <td>Тип образования</td>
+              <td>Имя учебного заведения</td>
+              <td>Дата окончания учебного заведения</td>
+              <td>Специальность</td>
+              <td>Номер военного билета</td>
+              <td>Подключение</td>
+
+              <td>Номер приказа</td>
+              <td>Тип приказа</td>
+              <td>Должность</td>
+              <td>Направление</td>
+              <td>Дата приказа</td>
+              <td>Филиал</td>
+              <td>Отдел</td>
+              <td>№ ДИ</td>
+
+              <td>Кабинет</td>
+              <td>Почта регион Lotus</td>
+              <td>Почта Lotus77</td>
+              <td>Рабочий телефон</td>
+
+              <td>region привилегированная</td>
+              <td>region непривилегированная</td>
+              <td>dpc привилегированная</td>
+              <td>dpc непривилегированная</td>
+              <td>idmz привилегированная</td>
+              <td>sobi привилегированная</td>
+              <td>iss привилегированная</td>
+              <td>ern привилегированная</td>
+              <td>УЗ для тестирования ЕКП</td>
+              <td>ПАК ППК ЗАГС (для тестировщиков)</td>
+              <td>ПАК КПЭ ЗАГС (для тестировщиков)</td>
+              <td>ПАК ЕГР ЗАГС (для администратора)</td>
+              <td>УЗ КПЭ АИС ФЦОД</td>
+              <td>УЗ ППК АИС ФЦОД</td>
+              <td>УЗ КПЭ ЕРН</td>
+
+              <td>Локальный АРМ</td>
+              <td>Интернет АРМ</td>
+              <td>АРМ ФИР</td>
+              <td>АРМ ЗАГС</td>
+              <td>ip Соболь</td>
+
+              <td>Имя VDI Horizon "Походный"</td>
+              <td>Имя VDI Horizon "Дубна"</td>
+              <td>Имя VDI Horizon "Городец"</td>
+
+              <td class="table_td_edit">
+                <a href="#"><img src="../assets/images/icon_edit.png" alt="изм"/></a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
     </main>
 
     <div class="other">

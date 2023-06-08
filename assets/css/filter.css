@@ -23,3 +23,31 @@
 .secondary_header_filter #filter_btn_cancel:active {
   box-shadow: none;
 }
+
+.blockSection {
+  border-left: 4px var(--color-headblue) solid;
+  /* border-radius: 4px; */
+  margin: 5px 0px 5px 0px;
+  padding: 5px;
+}
+.blockSectionHeader {
+}
+.blockSectionContent {}
+.blockSectionContent button {
+  border: 1px black solid;
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  color: black;
+  padding: 4px 8px;
+  margin: 4px;
+  /* box-shadow: var(--shadow-head); */
+}
+.blockSectionContent button:hover {
+  box-shadow: var(--shadow-head-blue);
+  background: var(--color-headblue);
+  color: white;
+}
+.blockSectionContent button:active {
+  box-shadow: none;
+  border: 1px white solid;
+}

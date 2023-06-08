@@ -119,17 +119,32 @@ table .table_td_edit a:hover {
   display: flex;
   padding: 10px;
 }
-.otchet button {
+.otchet a {
+  color: white;
+  text-decoration: none;
   padding: 6px 12px;
   border: none;
   background-color: var(--color-headblue);
-  color: white;
   border-radius: 10px;
   box-shadow: var(--shadow-head);
 }
-.otchet button:hover {
+.otchet a:hover {
   box-shadow: var(--shadow-head-blue);
+  color: white;
 }
-.otchet button:active {
+.otchet a:active {
   box-shadow: none;
+}
+
+.count_data {
+  position: fixed;
+  bottom: 0;
+  right: 90px;
+  display: flex;
+  padding: 6px 12px;
+  margin: 10px;
+  border-radius: 10px;
+
+  background-color: var(--color-headblue);
+  color: white;
 }
