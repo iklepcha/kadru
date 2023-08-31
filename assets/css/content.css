@@ -6,7 +6,7 @@ main {
   padding: 10px;
 
   border-radius: 6px;
-  height: 52px;
+  height: auto;
   background: white;
   box-shadow: var(--shadow-head);
 
